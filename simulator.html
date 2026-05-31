@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Handball Position Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <span class="tag">INTERACTIVE SIMULATOR</span>
+
+        <h1>HANDBALL POSITIONS</h1>
+
+        <h2>Discover the role of each player on the court</h2>
+
+    </div>
+
+</header>
+
+<section class="section">
+
+    <h2 class="section-title">Choose a Position</h2>
+
+    <div class="selector-container">
+
+        <select id="positionSelect">
+
+            <option value="">Select a position</option>
+
+            <option value="goalkeeper">Goalkeeper</option>
+
+            <option value="backcourt">Backcourt Player</option>
+
+            <option value="wing">Wing</option>
+
+            <option value="pivot">Pivot</option>
+
+        </select>
+
+        <button onclick="showPosition()">
+            Show Information
+        </button>
+
+    </div>
+
+    <div id="positionInfo" class="position-card">
+
+    </div>
+
+</section>
+
+<script src="simulator.js"></script>
+
+</body>
+</html>
